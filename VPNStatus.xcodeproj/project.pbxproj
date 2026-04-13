@@ -1,0 +1,428 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A001 /* VPNStatusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A101; };
+		A002 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A102; };
+		A003 /* VPNStatusShortcuts.swift in Sources */ = {isa = PBXBuildFile; fileRef = A103; };
+		A004 /* VPNStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = A104; };
+		A005 /* VPNActivityAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A105; };
+		A006 /* LiveActivityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A106; };
+		A011 /* VPNStatusWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A111; };
+		A012 /* VPNStatusLiveActivityWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = A112; };
+		A013 /* VPNStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = A104; };
+		A014 /* VPNActivityAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A105; };
+		A021 /* VPNStatusWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A301; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A230 = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A900;
+			proxyType = 1;
+			remoteGlobalIDString = A201;
+			remoteInfo = VPNStatusWidget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A220 = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A021,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A101 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VPNStatusApp.swift; sourceTree = "<group>"; };
+		A102 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A103 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VPNStatusShortcuts.swift; sourceTree = "<group>"; };
+		A104 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VPNStatus.swift; sourceTree = "<group>"; };
+		A105 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VPNActivityAttributes.swift; sourceTree = "<group>"; };
+		A106 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveActivityManager.swift; sourceTree = "<group>"; };
+		A107 = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A108 = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VPNStatus.entitlements; sourceTree = "<group>"; };
+		A111 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VPNStatusWidgetBundle.swift; sourceTree = "<group>"; };
+		A112 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VPNStatusLiveActivityWidget.swift; sourceTree = "<group>"; };
+		A113 = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A114 = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VPNStatusWidget.entitlements; sourceTree = "<group>"; };
+		A300 = {isa = PBXFileReference; explicitFileType = wrapper.application; path = VPNStatus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A301 = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; path = VPNStatusWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A400 = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A210 = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A211 = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A500 = {
+			isa = PBXGroup;
+			children = (
+				A501,
+				A502,
+				A503,
+				A504,
+				A505,
+			);
+			sourceTree = "<group>";
+		};
+		A501 = {
+			isa = PBXGroup;
+			children = (
+				A101,
+				A102,
+				A103,
+				A107,
+				A108,
+			);
+			path = VPNStatus;
+			sourceTree = "<group>";
+		};
+		A502 = {
+			isa = PBXGroup;
+			children = (
+				A111,
+				A112,
+				A113,
+				A114,
+			);
+			path = VPNStatusWidget;
+			sourceTree = "<group>";
+		};
+		A503 = {
+			isa = PBXGroup;
+			children = (
+				A104,
+				A105,
+				A106,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		A504 = {
+			isa = PBXGroup;
+			children = (
+				A300,
+				A301,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A505 = {isa = PBXGroup; children = (A400,); name = Docs; sourceTree = "<group>"; };
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A200 = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A600;
+			buildPhases = (
+				A212,
+				A210,
+				A213,
+				A220,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A231,
+			);
+			name = VPNStatus;
+			productName = VPNStatus;
+			productReference = A300;
+			productType = "com.apple.product-type.application";
+		};
+		A201 = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A601;
+			buildPhases = (
+				A214,
+				A211,
+				A215,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VPNStatusWidget;
+			productName = VPNStatusWidget;
+			productReference = A301;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A900 = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					A200 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					A201 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = A610;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A500;
+			productRefGroup = A504;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A200,
+				A201,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A213 = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A215 = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A212 = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A001,
+				A002,
+				A003,
+				A004,
+				A005,
+				A006,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A214 = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A011,
+				A012,
+				A013,
+				A014,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A231 = {isa = PBXTargetDependency; target = A201; targetProxy = A230; };
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A700 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A701 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		A710 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = VPNStatus/VPNStatus.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = VPNStatus/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.VPNStatus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		A711 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = VPNStatus/VPNStatus.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = VPNStatus/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.VPNStatus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		A720 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = VPNStatusWidget/VPNStatusWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = VPNStatusWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.VPNStatus.VPNStatusWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A721 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = VPNStatusWidget/VPNStatusWidget.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = VPNStatusWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.VPNStatus.VPNStatusWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A600 = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A710,
+				A711,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A601 = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A720,
+				A721,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A610 = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A700,
+				A701,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A900;
+}
